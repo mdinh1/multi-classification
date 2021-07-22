@@ -1,5 +1,5 @@
 
-# Multiclass Classification: Structure Type Identification
+# Multiclass Classification: Structure Type Identification using CNN
 
 ### _Authored by Michael Dinh_
   
@@ -12,8 +12,9 @@ The objective of this project is to accurately identify the manmade/natural stru
 
 ### Convolutional Neural Network
 
+
 ## Data
-  [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification)
+[Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification)
   
 ## Exploratory Data Analysis
 
@@ -80,9 +81,26 @@ _________________________________________________________________
 
 ## Results
 
+```markdown
+              precision    recall  f1-score   support
+
+   buildings       0.90      0.88      0.89       437
+      forest       0.99      1.00      0.99       474
+     glacier       0.87      0.82      0.84       553
+    mountain       0.85      0.85      0.85       525
+         sea       0.93      0.97      0.95       510
+      street       0.88      0.92      0.90       501
+
+    accuracy                           0.90      3000
+   macro avg       0.90      0.91      0.90      3000
+weighted avg       0.90      0.90      0.90      3000
+```
+
 ## Conclusion
 
 ## Next Steps
+
+## Sources
 
 You can use the [editor on GitHub](https://github.com/mdinh1/multi-classification/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -120,18 +138,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-
-
-
-precision    recall  f1-score   support
-
-   buildings       0.90      0.88      0.89       437
-      forest       0.99      1.00      0.99       474
-     glacier       0.87      0.82      0.84       553
-    mountain       0.85      0.85      0.85       525
-         sea       0.93      0.97      0.95       510
-      street       0.88      0.92      0.90       501
-
-    accuracy                           0.90      3000
-   macro avg       0.90      0.91      0.90      3000
-weighted avg       0.90      0.90      0.90      3000
