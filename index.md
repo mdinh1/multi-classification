@@ -1,4 +1,20 @@
 
+# Multiclass Classification: Structure Type Identification
+
+###Authored by Michael Dinh
+  
+##Introduction
+  
+This project is intended as the initial steps..
+
+### Problem Statement
+The objective of this project is to accurately identify the manmade/natural structure presented in image files through convolutional neural network (CNN) using an image dataset of structures of different types, which includes buildings, forest, glacier, mountains, sea, and streets. The target percentage in both training accuracy and validation accuracy is to be at least 80%. When the target results are obtained, the model will have a web-based interface where images can be uploaded and classified.
+
+## Data
+  [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification)
+  
+## Exploratory Data Analysis
+
   
 ### Limitations
 
