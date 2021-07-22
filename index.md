@@ -17,8 +17,34 @@ The objective of this project is to accurately identify the manmade/natural stru
 [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification)
   
 ## Exploratory Data Analysis
+```markdown
+TRAINING: Class names and image count
+=====================================
 
-  
+ buildings:            2191 image files
+    forest:            2271 image files
+   glacier:            2404 image files
+  mountain:            2512 image files
+       sea:            2274 image files
+    street:            2382 image files
+
+     TOTAL:           14034 image files
+```
+
+```markdown
+TESTING: Class names and image count
+====================================
+
+ buildings:             437 image files
+    forest:             474 image files
+   glacier:             553 image files
+  mountain:             525 image files
+       sea:             510 image files
+    street:             501 image files
+
+     TOTAL:            3000 image files
+```
+
 ### Limitations
 
 ## Preprocessing
