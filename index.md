@@ -51,6 +51,12 @@ Non-trainable params: 20,026,176
 _________________________________________________________________
 ```
 
+![vgg_loss](https://user-images.githubusercontent.com/46685852/126697633-6f0bf4a4-046c-4f64-b77e-533bb357f92b.jpg)
+
+![vgg_acc](https://user-images.githubusercontent.com/46685852/126697638-0b9d9dd9-722c-436f-b722-a68f67ce04b5.jpg)
+
+
+
 ## RESNET50 Modeling
 
 **Model summary:**
