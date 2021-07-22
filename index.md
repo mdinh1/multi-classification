@@ -1,14 +1,16 @@
 
 # Multiclass Classification: Structure Type Identification
 
-###Authored by Michael Dinh
+### _Authored by Michael Dinh_
   
-##Introduction
+## Introduction
   
 This project is intended as the initial steps..
 
 ### Problem Statement
 The objective of this project is to accurately identify the manmade/natural structure presented in image files through convolutional neural network (CNN) using an image dataset of structures of different types, which includes buildings, forest, glacier, mountains, sea, and streets. The target percentage in both training accuracy and validation accuracy is to be at least 80%. When the target results are obtained, the model will have a web-based interface where images can be uploaded and classified.
+
+### Convolutional Neural Network
 
 ## Data
   [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification)
@@ -20,9 +22,9 @@ The objective of this project is to accurately identify the manmade/natural stru
 
 ## Preprocessing
 
-## VGG19 Modeling 
+## VGG19(OxfordNet) Modeling 
 
-**OUTPUT:**
+**Model summary:**
 ```markdown
 Model: "sequential_3"
 _________________________________________________________________
@@ -49,6 +51,32 @@ _________________________________________________________________
 ```
 
 ## RESNET50 Modeling
+
+**Model summary:**
+```markdown
+Model: "sequential_2"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+resnet50 (Functional)        (None, 2048)              23587712  
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 2048)              8192      
+_________________________________________________________________
+dense_6 (Dense)              (None, 256)               524544    
+_________________________________________________________________
+batch_normalization_7 (Batch (None, 256)               1024      
+_________________________________________________________________
+dense_7 (Dense)              (None, 128)               32896     
+_________________________________________________________________
+batch_normalization_8 (Batch (None, 128)               512       
+_________________________________________________________________
+dense_8 (Dense)              (None, 6)                 774       
+=================================================================
+Total params: 24,155,654
+Trainable params: 563,078
+Non-trainable params: 23,592,576
+_________________________________________________________________
+```
 
 ## Results
 
