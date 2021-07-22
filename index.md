@@ -1,29 +1,4 @@
-<div align="center">
-  <h1>Multiclass Classification: Structure Type Identification</h1>
-</div>
-<p style="font-style: italic;">Authored by Michael Dinh<p>
-  
-<h2>Introduction</h2>
-  
-This project is intended as the initial steps..
-  
-<h2>Problem Statement</h2>
-The objective of this project is to accurately identify the manmade/natural structure presented in image files through convolutional neural network (CNN) using an image dataset of structures of different types, which includes buildings, forest, glacier, mountains, sea, and streets. The target percentage in both training accuracy and validation accuracy is to be at least 80%. When the target results are obtained, the model will have a web-based interface where images can be uploaded and classified.
 
-<h2>Data</h2>
-  [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification)
-  
-<h2>Exploratory Data Analysis</h2>
-
-  
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/46685852/126672473-2e2409b2-9384-4654-84a9-4b120fb0fb03.png">
-</p>
-  
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/46685852/126688519-aa63c645-e6ad-448a-b543-d6ef80fecd47.png">
-</p>
   
 ### Limitations
 
