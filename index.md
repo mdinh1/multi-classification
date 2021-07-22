@@ -31,35 +31,8 @@ The objective of this project is to accurately identify the manmade/natural stru
 
 ## VGG19 Modeling 
 
-**CODE:**
-```markdown
-CODE:
-from tensorflow.keras import Sequential, layers, regularizers, losses, callbacks, models
-from tensorflow.keras.applications import VGG19
-from tensorflow.keras import optimizers
-  
-num_classes = 6
-
-vgg_model = Sequential([
-    VGG19(include_top = False, pooling='avg', weights='imagenet'),
-    layers.BatchNormalization(),
-    layers.Dense(256, activation='relu'),
-    layers.BatchNormalization(),
-    layers.Dense(128, activation='relu'),
-    layers.BatchNormalization(),
-    layers.Dense(num_classes, activation='softmax')
-])
-
-vgg_model.layers[0].trainable = False
-
-sgd = optimizers.Adam(learning_rate=0.001, beta_1=0.9, beta_2=0.999)
-vgg_model.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy'])
-
-vgg_model.summary()
-```
 **OUTPUT:**
 ```markdown
-OUTPUT:
 Model: "sequential_3"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -84,47 +57,6 @@ Non-trainable params: 20,026,176
 _________________________________________________________________
 ```
 
-```markdown
-CODE:
-callback = callbacks.EarlyStopping(monitor='val_loss', patience=4, restore_best_weights=True)
-vgg_results = vgg_model.fit(train_set, validation_data=test_set, epochs=100, steps_per_epoch=10, validation_steps=10, callbacks=[callback])
-
-OUTPUT:
-Epoch 1/100
-10/10 [==============================] - 2s 155ms/step - loss: 1.5690 - accuracy: 0.4250 - val_loss: 1.4302 - val_accuracy: 0.5781
-Epoch 2/100
-10/10 [==============================] - 1s 127ms/step - loss: 0.6622 - accuracy: 0.7812 - val_loss: 0.9832 - val_accuracy: 0.6531
-Epoch 3/100
-10/10 [==============================] - 1s 127ms/step - loss: 0.5124 - accuracy: 0.8344 - val_loss: 0.8827 - val_accuracy: 0.7531
-Epoch 4/100
-10/10 [==============================] - 1s 127ms/step - loss: 0.4731 - accuracy: 0.8281 - val_loss: 0.6478 - val_accuracy: 0.7937
-Epoch 5/100
-10/10 [==============================] - 1s 128ms/step - loss: 0.4536 - accuracy: 0.8344 - val_loss: 0.5416 - val_accuracy: 0.8375
-Epoch 6/100
-10/10 [==============================] - 1s 128ms/step - loss: 0.4126 - accuracy: 0.8438 - val_loss: 0.3755 - val_accuracy: 0.8875
-Epoch 7/100
-10/10 [==============================] - 1s 128ms/step - loss: 0.4070 - accuracy: 0.8594 - val_loss: 0.4433 - val_accuracy: 0.8500
-Epoch 8/100
-10/10 [==============================] - 1s 129ms/step - loss: 0.4323 - accuracy: 0.8344 - val_loss: 0.4056 - val_accuracy: 0.8781
-Epoch 9/100
-10/10 [==============================] - 1s 129ms/step - loss: 0.2884 - accuracy: 0.9000 - val_loss: 0.4439 - val_accuracy: 0.8469
-Epoch 10/100
-10/10 [==============================] - 1s 131ms/step - loss: 0.3366 - accuracy: 0.8781 - val_loss: 0.3357 - val_accuracy: 0.8813
-Epoch 11/100
-10/10 [==============================] - 1s 130ms/step - loss: 0.3328 - accuracy: 0.8813 - val_loss: 0.3875 - val_accuracy: 0.8750
-Epoch 12/100
-10/10 [==============================] - 1s 130ms/step - loss: 0.3658 - accuracy: 0.8750 - val_loss: 0.4408 - val_accuracy: 0.8531
-Epoch 13/100
-10/10 [==============================] - 1s 129ms/step - loss: 0.3231 - accuracy: 0.8938 - val_loss: 0.2841 - val_accuracy: 0.8969
-Epoch 14/100
-10/10 [==============================] - 1s 148ms/step - loss: 0.3020 - accuracy: 0.9156 - val_loss: 0.3482 - val_accuracy: 0.8594
-Epoch 15/100
-10/10 [==============================] - 1s 130ms/step - loss: 0.3207 - accuracy: 0.8938 - val_loss: 0.2843 - val_accuracy: 0.8750
-Epoch 16/100
-10/10 [==============================] - 1s 130ms/step - loss: 0.3158 - accuracy: 0.8844 - val_loss: 0.3054 - val_accuracy: 0.8844
-Epoch 17/100
-10/10 [==============================] - 1s 129ms/step - loss: 0.3175 - accuracy: 0.9062 - val_loss: 0.3209 - val_accuracy: 0.8781
-```
 ## RESNET50 Modeling
 
 ## Results
