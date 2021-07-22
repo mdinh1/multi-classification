@@ -1,17 +1,20 @@
 <div align="center">
   <h1>Multiclass Classification: Structure Type Identification</h1>
-  <h3 style="font-style: italic;">Authored by Michael Dinh<h3>
 </div>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/46685852/126672473-2e2409b2-9384-4654-84a9-4b120fb0fb03.png">
-</p>
-
+<h3 style="font-style: italic;">Authored by Michael Dinh<h3>
+  
 ## Introduction
 ### Problem Statement
 
 ## Data
 ### Exploratory Data Analysis
+
+  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/46685852/126672473-2e2409b2-9384-4654-84a9-4b120fb0fb03.png">
+</p>
+  
 ### Limitations
 
 ## Preprocessing
