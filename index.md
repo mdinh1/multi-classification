@@ -5,10 +5,14 @@
   
 ## Introduction
   
-This project is intended as the initial steps..
+Briefly introduce image classifcation, the benefits and why you did this project.
 
 ### Problem Statement
-The objective of this project is to accurately identify the manmade/natural structure presented in image files through convolutional neural network (CNN) using an image dataset of structures of different types, which includes buildings, forest, glacier, mountains, sea, and streets. The target percentage in both training accuracy and validation accuracy is to be at least 80%. When the target results are obtained, the model will have a web-based interface where images can be uploaded and classified.
+The objective of this project is to accurately identify the type of structure presented in images through convolutional neural network (CNN) using a dataset that consists of scenes of various structure types, which includes:
+```
+['buildings': 0, 'forest': 1, 'glacier': 2, 'mountain': 3, 'sea': 4, 'street': 5]
+```
+The target percentage in both training accuracy and validation accuracy is to be **at least 80%**. When the target results are achieved, the model will be demonstrated through a web-based interface where images can be uploaded and accurately classified to its respective structure type.
 
 ### Convolutional Neural Network
 
