@@ -17,7 +17,7 @@ The target percentage in both training accuracy and validation accuracy is to be
 
 
 ## Data
-[Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification)
+[Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification) or [Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-intel-scene-classification-challe/#LeaderBoard)
 
 
   
