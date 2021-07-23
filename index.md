@@ -1,4 +1,3 @@
-
 # Multiclass Classification: Structure Type Identification using CNN
 
 ### _Authored by Michael Dinh_
@@ -8,7 +7,7 @@
 Briefly introduce image classifcation, the benefits and why you did this project.
 
 ### Problem Statement
-The objective of this project is to accurately identify the type of structure presented in images through convolutional neural network (CNN) using a dataset that consists of scenes of various structure types, which includes:
+The objective of this project is to accurately identify the type of structure presented in images through convolutional neural network (CNN) using a dataset that consists of scenes of various structure types categorized by:
 ```
 ['buildings': 0, 'forest': 1, 'glacier': 2, 'mountain': 3, 'sea': 4, 'street': 5]
 ```
@@ -23,7 +22,7 @@ The target percentage in both training accuracy and validation accuracy is to be
 
   
 ## Exploratory Data Analysis
-![data_sample](https://user-images.githubusercontent.com/46685852/126810551-292f7f79-000b-4638-9b3e-7fb167bb50ab.png)
+![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
 
 
 ```markdown
@@ -64,7 +63,7 @@ TESTING: Class names and image count
 
 **Model summary:**
 ```markdown
-Model: "sequential_3"
+Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -98,7 +97,7 @@ _________________________________________________________________
 
 **Model summary:**
 ```markdown
-Model: "sequential_2"
+Model: "sequential_1"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
