@@ -21,6 +21,10 @@ The target percentage in both training accuracy and validation accuracy is to be
 [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification)
   
 ## Exploratory Data Analysis
+
+![data_sample](https://user-images.githubusercontent.com/46685852/126810040-e4ef9c4d-193f-4c47-a7c5-b1937057cba2.jpg)
+
+
 ```markdown
 TRAINING: Class names and image count
 =====================================
