@@ -54,6 +54,8 @@ TESTING: Class names and image count
      TOTAL:            3000 image files
 ```
 
+![image_dist](https://user-images.githubusercontent.com/46685852/126810969-c2d659b9-f50f-467f-88fc-462309af4a0f.png)
+
 ### Limitations
 
 ## Preprocessing
