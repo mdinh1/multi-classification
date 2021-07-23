@@ -1,10 +1,15 @@
-# Multi-class Classification: Structure Type Identification using CNN
+# Image Classification: Structure Type Identification using CNN
 
 ### _Authored by Michael Dinh_
   
 ## Introduction
   
-Briefly introduce image classifcation, the benefits and why you did this project.
+Image classification is the task of classifying an input image of its respective class from a set of 2 or more classes. In this case, the problem presented in this project would be considered a multi-class classification problem where there are 6 different categories the input image can be classified as. The benefit of this project is familiarizing myself with the concept of convolutional neural networks and the practices involved when implementing them, allowing myself the ability to solve common computer vision problems such as: facial recognition, geolocation classifiction, etc. Some of the questions I'd like to answer through this project is:
+
+- After the initial modeling, how will parameters be adjusted?
+- Are there going to be any scenic images that may “confuse” the model?
+- Will an early stop need to be implemented?
+
 
 ### Problem Statement
 The objective of this project is to accurately identify the type of structure presented in images through convolutional neural network (CNN) using a dataset that consists of scenes of various structure types categorized by:
@@ -60,6 +65,8 @@ TESTING: Class names and image count
 ## Preprocessing
 
 ## VGG19(OxfordNet) Modeling 
+
+![image](https://user-images.githubusercontent.com/46685852/126830547-9de7c3f9-0a3c-4e5b-9556-498f71ffdaf0.png)
 
 **Model summary:**
 ```markdown
