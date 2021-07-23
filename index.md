@@ -1,4 +1,4 @@
-# Multiclass Classification: Structure Type Identification using CNN
+# Multi-class Classification: Structure Type Identification using CNN
 
 ### _Authored by Michael Dinh_
   
