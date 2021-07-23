@@ -144,6 +144,8 @@ weighted avg       0.90      0.90      0.90      3000
 
 ## Sources
 
+[pyimagesearch](https://www.pyimagesearch.com/2017/03/20/imagenet-vggnet-resnet-inception-xception-keras/) ImageNet: VGGNet, ResNet, Inception, and Xception with Keras
+
 You can use the [editor on GitHub](https://github.com/mdinh1/multi-classification/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
