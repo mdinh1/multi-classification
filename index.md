@@ -9,7 +9,12 @@ Image classification is the task of classifying an input image of its respective
 The purpose of selecting image classification as the subject of this projet is to presents myself with new and fun challenges in applying the general machine learning workflow. 
 Other benefits of this project is to familiarize myself with the concept of convolutional neural networks and the practices involved when implementing them and allow for the ability to solve common computer vision problems like facial recognition or geolocation classifiction. 
 
+### Convolutional Neural Network
+
+
+
 ### Problem Statement
+
 The objective of this project is to accurately identify the type of structure presented in images through convolutional neural network (CNN) using a dataset that consists of     scenes of various structure types categorized by:
 ```
 ['buildings': 0, 'forest': 1, 'glacier': 2, 'mountain': 3, 'sea': 4, 'street': 5]
@@ -22,10 +27,9 @@ Questions that will be considered throughout this project:
 - Which model is going to perform the best and how will that be measured?
 - In the dataset, are there any images that may "confuse" the model?
 
-### Convolutional Neural Network
-
 
 ## Data
+
 [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification) or [Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-intel-scene-classification-challe/#LeaderBoard)
 
 
