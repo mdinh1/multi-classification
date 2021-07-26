@@ -6,16 +6,12 @@
   
 Image classification is the task of classifying an input image of its respective class from a set of 2 or more classes/labels. In this case, the problem presented in this project will be a multi-class classification one where there are 6 possible categories the input image can be classified as. 
 
-The purpose of selecting image classification as the subject of this projet is to presents myself with new and fun challenges in applying the general machine learning workflow. 
-Other benefits of this project is to familiarize myself with the concept of convolutional neural networks and the practices involved when implementing them and allow for the ability to solve common computer vision problems like facial recognition or geolocation classifiction. 
-
-### Convolutional Neural Network
-
-
+The purpose of selecting image classification as the subject of this project is to present myself with some new and fun challenges in applying the general machine learning workflow. 
+This project is also intended to familiarize myself with the concept of convolutional neural networks and the practices involved when implementing the algorithm which ultimately allows for the ability to solve common computer vision problems like facial recognition and/or geolocation classifiction. 
 
 ### Problem Statement
 
-The objective of this project is to accurately identify the type of structure presented in images through convolutional neural network (CNN) using a dataset that consists of     scenes of various structure types categorized by:
+The objective of this project is to accurately identify the type of structure presented in images using convolutional neural network (CNN) with the dataset that consists of scenic images of various structure types categorized by:
 ```
 ['buildings': 0, 'forest': 1, 'glacier': 2, 'mountain': 3, 'sea': 4, 'street': 5]
 ```
@@ -30,7 +26,27 @@ Questions that will be considered throughout this project:
 
 ## Data
 
-[Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification) or [Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-intel-scene-classification-challe/#LeaderBoard)
+The dataset used to fit the CNN model was obtained through [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification) and shared by user Puneet Bansal. The data used to fit the CNN model consists a total of 17,034 images (150 x 150 dimension) where the images are already pre-segmented into training and testing data. Both training and testing datasets contains 
+
+```
+-- seg_test/
+  -- buildings/
+  -- forest/
+  -- glacier/
+  -- mountain/
+  -- sea/
+  -- street/
+
+-- seg_train/
+  -- buildings/
+  -- forest/
+  -- glacier/
+  -- mountain/
+  -- sea/
+  -- street/
+```
+
+[Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-intel-scene-classification-challe)
 
 
   
@@ -69,6 +85,8 @@ TESTING: Class names and image count
 ![image_dist](https://user-images.githubusercontent.com/46685852/126810969-c2d659b9-f50f-467f-88fc-462309af4a0f.png)
 
 ### Limitations
+
+
 
 ## Preprocessing
 
