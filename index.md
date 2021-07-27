@@ -27,23 +27,35 @@ Questions that will be considered throughout this project:
 
 The dataset used to fit the CNN model was obtained through [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification) which was originally used in a computer vision competition hosted on [Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-intel-scene-classification-challe). The data consists a total of 17,034 images (150 x 150 dimension) where the images are already pre-segmented into training and testing data where all images labeled by their structure type.
 
-```markdown
--- seg_test/
-  -- buildings/
-  -- forest/
-  -- glacier/
-  -- mountain/
-  -- sea/
-  -- street/
-
--- seg_train/
-  -- buildings/
-  -- forest/
-  -- glacier/
-  -- mountain/
-  -- sea/
-  -- street/
 ```
+TRAINING: Class names and image count
+=====================================
+
+ buildings:            2191 image files
+    forest:            2271 image files
+   glacier:            2404 image files
+  mountain:            2512 image files
+       sea:            2274 image files
+    street:            2382 image files
+
+     TOTAL:           14034 image files
+```
+
+```
+TESTING: Class names and image count
+====================================
+
+ buildings:             437 image files
+    forest:             474 image files
+   glacier:             553 image files
+  mountain:             525 image files
+       sea:             510 image files
+    street:             501 image files
+
+     TOTAL:            3000 image files
+```
+
+![image_dist](https://user-images.githubusercontent.com/46685852/126810969-c2d659b9-f50f-467f-88fc-462309af4a0f.png)
 
 ### Limitations
 
@@ -67,45 +79,16 @@ Examples:
 ![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
 
 
-```markdown
-TRAINING: Class names and image count
-=====================================
+## Modeling
 
- buildings:            2191 image files
-    forest:            2271 image files
-   glacier:            2404 image files
-  mountain:            2512 image files
-       sea:            2274 image files
-    street:            2382 image files
+### Preprocessing
 
-     TOTAL:           14034 image files
-```
-
-```markdown
-TESTING: Class names and image count
-====================================
-
- buildings:             437 image files
-    forest:             474 image files
-   glacier:             553 image files
-  mountain:             525 image files
-       sea:             510 image files
-    street:             501 image files
-
-     TOTAL:            3000 image files
-```
-
-![image_dist](https://user-images.githubusercontent.com/46685852/126810969-c2d659b9-f50f-467f-88fc-462309af4a0f.png)
-
-## Preprocessing
-
-## VGG19(OxfordNet) Modeling 
+### VGG19(OxfordNet) Modeling 
 
 ![image](https://user-images.githubusercontent.com/46685852/126830547-9de7c3f9-0a3c-4e5b-9556-498f71ffdaf0.png)
 
 **Model summary:**
-```markdown
-Model: "sequential"
+```
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -135,10 +118,10 @@ _________________________________________________________________
 
 
 
-## RESNET50 Modeling
+### RESNET50 Modeling
 
 **Model summary:**
-```markdown
+```
 Model: "sequential_1"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
