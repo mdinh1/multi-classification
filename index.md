@@ -59,11 +59,11 @@ TESTING: Class names and image count
 
 ### Limitations
 
-While skimming through the images that exists in the training portion of the dataset, I've taken noticed of some potential limitations of the data. The limitations that exists in this dataset includes images that may "confuse" the model.
+While skimming through the images that exists in the training portion of the dataset, I've taken noticed of some potential limitations of the data. The limitations that exists in this dataset includes images that may "confuse" the model. 
 
 Examples: 
 
-- This image, labeled "sea", contains multiple items such as a body of water and mountains. There is also the possibility that the mountains can be classed as "glacier".
+- Scenic images with multiple potential labels
 
     ![5233](https://user-images.githubusercontent.com/46685852/127090257-efe7e02d-25b7-4f1a-8bd4-b8674a0d3b6c.jpg)![image](https://user-images.githubusercontent.com/46685852/127092472-0c9125ff-7d3a-4b00-b57d-a1caacc54c98.png)
 
@@ -74,12 +74,17 @@ Examples:
  
 ### Exploratory Data Analysis
 
+When observing the randomly displayed images below, there is a couple of assumptions that can be made:
 
+- Given that many images in "street" contains buildings, it is likely that a significant portion of the images in "street" will be classfied as "buildings".
+- Same can be said about images in "glacier" and "sea" where many images of "glacier" contains a body of water.
 
 ![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
 
 
-## Modeling
+## Implementing the Models
+
+
 
 ### Preprocessing
 
