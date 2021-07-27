@@ -83,8 +83,7 @@ When observing the randomly displayed images below, there is a couple of assumpt
 
 
 ## Implementing the Models
-
-
+During my research on how to structure a reliable multi-class classification model, 
 
 ### Preprocessing
 
