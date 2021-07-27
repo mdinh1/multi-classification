@@ -196,6 +196,10 @@ _________________________________________________________________
 
 ![res_accfig3](https://user-images.githubusercontent.com/46685852/127201591-78e4ef35-fa0a-4f38-9c8b-0470bdbee93a.jpg)
 
+With VGG19 model, "glacier" had the lowest recall score of 78% whereas ResNet50 predicts "glacier" more accurately with a recall score of 84%. "street" recall score has also increased from 88% to 93%.
+
+Overall accuracy has improved from VGG19's 88% to ResNet50's 91%.
+
 ```markdown
               precision    recall  f1-score   support
 
@@ -211,7 +215,8 @@ _________________________________________________________________
 weighted avg       0.91      0.91      0.91      3000
 ```
 
-![vgg_matrix](https://user-images.githubusercontent.com/46685852/127201613-25a9c5d5-6b10-4e4c-b396-1e18228445a6.png)
+![res_matrix](https://user-images.githubusercontent.com/46685852/127208754-bcc5a342-7c37-493d-85ab-131a26913c31.jpg)
+
 
 ```
 CLASSIFICATION Confidence:
