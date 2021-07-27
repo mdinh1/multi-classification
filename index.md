@@ -76,8 +76,8 @@ Examples:
 
 When observing the randomly displayed images below, there is a couple of assumptions that can be made:
 
-- Given that many images in `street` containing building structures, it is likely that a significant portion of the images in `street` will be classfied as `buildings`.
-- Same can be said about images in `glacier` and `sea` where many images of `glacier` contains a body of water.
+- Given that many images in street containing building structures, it is likely that a significant portion of the images in street will be classfied as buildings.
+- Same can be said about images in glacier and sea where many images of glacier contains a body of water.
 
 ![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
 
@@ -85,14 +85,16 @@ When observing the randomly displayed images below, there is a couple of assumpt
 ## Implementing the Models
 During my research on how to structure a CNN model, Keras pre-trained ImageNet models are a viable method of producing quick and reliable image classification models. These pre-trained models is trained using ImageNet database which contains more than 14 million images belonging to 20,000 classes. Keras provides a number of models, however, I will be focused on the more popular ones: `VGG19` and `ResNet50`.
 
-- `VGG19`: the architecture is known for its simplicity and consist of 25 layers with a combination of convolution, max pooling, and fully connected.
-  - Convolution layer uses filters that perform operations as it is scanning the input image to extract features.
-  - 
-![image](https://user-images.githubusercontent.com/46685852/126830547-9de7c3f9-0a3c-4e5b-9556-498f71ffdaf0.png)
+- `VGG19` is known for its simpler architecture and consist of 19 layers
+<!--   - Convolution layer uses filters that perform operations as it is scanning the input image to extract features.
+  - -->
 
-- `ResNet50`: 
+<!-- ![image](https://user-images.githubusercontent.com/46685852/126830547-9de7c3f9-0a3c-4e5b-9556-498f71ffdaf0.png) -->
 
-### VGG19 Modeling 
+- `ResNet50` or Residual Network is a much more complex architecture which consists of 50 layers.
+
+
+## VGG19 Modeling 
 
 **Model summary:**
 ```
@@ -119,8 +121,6 @@ Non-trainable params: 20,026,176
 _________________________________________________________________
 ```
 
-![vgg_loss](https://user-images.githubusercontent.com/46685852/126697633-6f0bf4a4-046c-4f64-b77e-533bb357f92b.jpg)
-
 ![vgg_acc](https://user-images.githubusercontent.com/46685852/126697638-0b9d9dd9-722c-436f-b722-a68f67ce04b5.jpg)
 
 ```markdown
@@ -141,11 +141,10 @@ weighted avg       0.88      0.88      0.88      3000
 ![vgg_matrix](https://user-images.githubusercontent.com/46685852/127094994-4f2bca7d-a597-4853-b043-f965e9dfb6d2.png)
 
 
-### RESNET50 Modeling
+## RESNET50 Modeling
 
 **Model summary:**
 ```
-Model: "sequential_1"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -169,13 +168,32 @@ Non-trainable params: 23,592,576
 _________________________________________________________________
 ```
 
+![res_accfig3](https://user-images.githubusercontent.com/46685852/127201591-78e4ef35-fa0a-4f38-9c8b-0470bdbee93a.jpg)
+
+```markdown
+              precision    recall  f1-score   support
+
+   buildings       0.92      0.90      0.91       437
+      forest       0.99      0.99      0.99       474
+     glacier       0.85      0.84      0.85       553
+    mountain       0.84      0.85      0.84       525
+         sea       0.94      0.94      0.94       510
+      street       0.91      0.93      0.92       501
+
+    accuracy                           0.91      3000
+   macro avg       0.91      0.91      0.91      3000
+weighted avg       0.91      0.91      0.91      3000
+```
+
+![vgg_matrix](https://user-images.githubusercontent.com/46685852/127201613-25a9c5d5-6b10-4e4c-b396-1e18228445a6.png)
+
 ## Conclusion
 
 ## Next Steps
 
-
+[ImageNet Object Localization Challenge](https://www.kaggle.com/c/imagenet-object-localization-challenge/data?select=imagenet_object_localization_patched2019.tar.gz)
 
 ## Sources
 
-- [pyimagesearch](https://www.pyimagesearch.com/2017/03/20/imagenet-vggnet-resnet-inception-xception-keras/) ImageNet: VGGNet, ResNet, Inception, and Xception with Keras
+[ImageNet: VGGNet, ResNet, Inception, and Xception with Keras](https://www.pyimagesearch.com/2017/03/20/imagenet-vggnet-resnet-inception-xception-keras/)
 
