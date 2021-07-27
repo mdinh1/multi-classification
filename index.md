@@ -86,6 +86,7 @@ When observing the randomly displayed images below, there is a couple of assumpt
 During my research on how to structure a CNN model, Keras pre-trained ImageNet models are a viable method of producing quick and reliable image classification models. These pre-trained models is trained using ImageNet database which contains more than 14 million images belonging to 20,000 classes. Keras provides a number of models, however, I will be focused on the more popular ones: `VGG19` and `ResNet50`.
 
 - `VGG19` is known for its simpler architecture and consist of 19 layers
+
 <!--   - Convolution layer uses filters that perform operations as it is scanning the input image to extract features.
   - -->
 
@@ -141,6 +142,23 @@ weighted avg       0.88      0.88      0.88      3000
 ![vgg_matrix](https://user-images.githubusercontent.com/46685852/127094994-4f2bca7d-a597-4853-b043-f965e9dfb6d2.png)
 
 
+
+```
+CLASSIFICATION Confidence:
+==========================
+
+0 -  buildings:   0.01%
+1 -     forest:   0.22%
+2 -    glacier:   1.39%
+3 -   mountain:   0.01%
+4 -        sea:  98.37%
+5 -     street:   0.01%
+
+CLASSIFIED: "sea"
+```
+![image](https://user-images.githubusercontent.com/46685852/127204467-41531918-d575-405f-a4fd-32228cd2e813.png)
+
+
 ## RESNET50 Modeling
 
 **Model summary:**
@@ -187,7 +205,25 @@ weighted avg       0.91      0.91      0.91      3000
 
 ![vgg_matrix](https://user-images.githubusercontent.com/46685852/127201613-25a9c5d5-6b10-4e4c-b396-1e18228445a6.png)
 
+```
+CLASSIFICATION Confidence:
+==========================
+
+0 -  buildings:   1.04%
+1 -     forest:   0.44%
+2 -    glacier:  53.86%
+3 -   mountain:  31.75%
+4 -        sea:  12.48%
+5 -     street:   0.43%
+
+CLASSIFIED: "glacier"
+```
+![image](https://user-images.githubusercontent.com/46685852/127204467-41531918-d575-405f-a4fd-32228cd2e813.png)
+
+
 ## Conclusion
+
+
 
 ## Next Steps
 
