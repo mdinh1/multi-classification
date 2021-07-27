@@ -28,7 +28,7 @@ Questions that will be considered throughout this project:
 
 The dataset used to fit the CNN model was obtained through [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification) which was originally used in a computer vision competition hosted on [Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-intel-scene-classification-challe). The data consists a total of 17,034 images (150 x 150 dimension) where the images are already pre-segmented into training and testing data where all images labeled by their structure type.
 
-```
+```markdown
 -- seg_test/
   -- buildings/
   -- forest/
@@ -48,8 +48,11 @@ The dataset used to fit the CNN model was obtained through [Kaggle](https://www.
 
 ### Limitations
 
+While randomly displaying the images that exists in the training portion of the dataset, I've taken noticed of some potential limitations of the data. The limitations that exists in this dataset includes mislabeled images along images that may "confuse" the model.
+- Examples: 
 
-  
+![5233](https://user-images.githubusercontent.com/46685852/127090257-efe7e02d-25b7-4f1a-8bd4-b8674a0d3b6c.jpg) ![image](https://user-images.githubusercontent.com/46685852/127090792-0e32c5ef-5434-4d77-a1b2-9ef1f3c01fa9.png) ![image](https://user-images.githubusercontent.com/46685852/127090921-fac42bd7-c1d4-493b-a77e-12b1c381f2ef.png)
+ 
 ### Exploratory Data Analysis
 ![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
 
@@ -152,7 +155,7 @@ _________________________________________________________________
 
 ## Results
 
-```markdown
+```
               precision    recall  f1-score   support
 
    buildings       0.90      0.88      0.89       437
