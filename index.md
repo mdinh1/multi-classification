@@ -131,7 +131,7 @@ _________________________________________________________________
 weighted avg       0.88      0.88      0.88      3000
 ```
 
-![vgg_matrix](https://user-images.githubusercontent.com/46685852/127094628-8f2ad9cf-7e59-460b-93e4-062618716087.jpg)
+![vgg_matrix](https://user-images.githubusercontent.com/46685852/127094994-4f2bca7d-a597-4853-b043-f965e9dfb6d2.png)
 
 
 ### RESNET50 Modeling
