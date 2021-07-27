@@ -127,7 +127,7 @@ When observing the graph below, as learning cycles are completed the overall acc
 
 In order to understand how well the model is performing, we will be focused on the overall accuracy and the recall score of each class. The recall score is the percentage of images that were classified correctly of each class.
 
-- Example: "buildings" has a recall score of 88%. This means that of all images that were classified as "building", 88% of those images were classified correctly.
+- Example: "buildings" has a recall score of 88%. This means that of all images that were actually classified as "building", 88% of those images were predicted correctly.
 
 ```markdown
               precision    recall  f1-score   support
@@ -231,6 +231,7 @@ CLASSIFICATION Confidence:
 
 CLASSIFIED: "glacier"
 ```
+
 ![image](https://user-images.githubusercontent.com/46685852/127204467-41531918-d575-405f-a4fd-32228cd2e813.png)
 
 ## Next Steps
