@@ -85,15 +85,14 @@ When observing the randomly displayed images below, there is a couple of assumpt
 ## Implementing the Models
 During my research on how to structure a CNN model, Keras pre-trained ImageNet models are a viable method of producing quick and reliable image classification models. These pre-trained models is trained using ImageNet database which contains more than 14 million images belonging to 20,000 classes. Keras provides a number of models, however, I will be focused on the more popular ones: `VGG19` and `ResNet50`.
 
-- `VGG19`: 
+- `VGG19`: the architecture is known for its simplicity and consist of 25 layers with a combination of convolution, max pooling, and fully connected.
+  - Convolution layer uses filters that perform operations as it is scanning the input image to extract features.
+  - 
+![image](https://user-images.githubusercontent.com/46685852/126830547-9de7c3f9-0a3c-4e5b-9556-498f71ffdaf0.png)
 
 - `ResNet50`: 
 
-### Preprocessing
-
-### VGG19(OxfordNet) Modeling 
-
-![image](https://user-images.githubusercontent.com/46685852/126830547-9de7c3f9-0a3c-4e5b-9556-498f71ffdaf0.png)
+### VGG19 Modeling 
 
 **Model summary:**
 ```
