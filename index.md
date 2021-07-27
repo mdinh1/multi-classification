@@ -122,7 +122,11 @@ Non-trainable params: 20,026,176
 _________________________________________________________________
 ```
 
-![vgg_acc](https://user-images.githubusercontent.com/46685852/126697638-0b9d9dd9-722c-436f-b722-a68f67ce04b5.jpg)
+![vgg_acc_2](https://user-images.githubusercontent.com/46685852/127204852-95a29649-6935-4a37-b2e5-90fdf9b24b5d.jpg)
+
+In order to understand how well the model is performing, we will be focused on the overall accuracy and the recall score of each class. The recall score is the percentage of images that were classified correctly of each class.
+
+- Example: "buildings" has a recall score of 88%. This means that of all images that were classified as "building", 88% of those images were classified correctly.
 
 ```markdown
               precision    recall  f1-score   support
@@ -220,14 +224,11 @@ CLASSIFIED: "glacier"
 ```
 ![image](https://user-images.githubusercontent.com/46685852/127204467-41531918-d575-405f-a4fd-32228cd2e813.png)
 
-
-## Conclusion
-
-
-
 ## Next Steps
 
-[ImageNet Object Localization Challenge](https://www.kaggle.com/c/imagenet-object-localization-challenge/data?select=imagenet_object_localization_patched2019.tar.gz)
+- The next steps I want to take is trying to understand the architecture of both models in order to have a better understanding of the results and try to visualize what each layer in the model is doing to the input image. 
+- I also want to find ways to automate the removal of "confusing" images.
+
 
 ## Sources
 
