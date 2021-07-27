@@ -122,6 +122,7 @@ Non-trainable params: 20,026,176
 _________________________________________________________________
 ```
 
+When observing the graph below, as learning cycles are completed the overall accuracy in both training and validation data increases with relatively small diverging from one another. 
 ![vgg_acc_2](https://user-images.githubusercontent.com/46685852/127204852-95a29649-6935-4a37-b2e5-90fdf9b24b5d.jpg)
 
 In order to understand how well the model is performing, we will be focused on the overall accuracy and the recall score of each class. The recall score is the percentage of images that were classified correctly of each class.
@@ -143,6 +144,9 @@ In order to understand how well the model is performing, we will be focused on t
 weighted avg       0.88      0.88      0.88      3000
 ```
 
+To reflect on the assumptions mentioned above:
+- 9.4% of actual images of "street" is classified as "building". 
+- 16% of actual images of "glacier" is classified as "mountain" with 3.6% is classified as "sea"
 ![vgg_matrix](https://user-images.githubusercontent.com/46685852/127094994-4f2bca7d-a597-4853-b043-f965e9dfb6d2.png)
 
 
