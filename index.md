@@ -116,6 +116,22 @@ _________________________________________________________________
 
 ![vgg_acc](https://user-images.githubusercontent.com/46685852/126697638-0b9d9dd9-722c-436f-b722-a68f67ce04b5.jpg)
 
+```markdown
+              precision    recall  f1-score   support
+
+   buildings       0.87      0.88      0.88       437
+      forest       0.95      0.98      0.97       474
+     glacier       0.83      0.78      0.81       553
+    mountain       0.80      0.84      0.82       525
+         sea       0.91      0.91      0.91       510
+      street       0.89      0.88      0.89       501
+
+    accuracy                           0.88      3000
+   macro avg       0.88      0.88      0.88      3000
+weighted avg       0.88      0.88      0.88      3000
+```
+
+![vgg_matrix](https://user-images.githubusercontent.com/46685852/127094628-8f2ad9cf-7e59-460b-93e4-062618716087.jpg)
 
 
 ### RESNET50 Modeling
@@ -146,55 +162,13 @@ Non-trainable params: 23,592,576
 _________________________________________________________________
 ```
 
-## Results
-
-```
-              precision    recall  f1-score   support
-
-   buildings       0.90      0.88      0.89       437
-      forest       0.99      1.00      0.99       474
-     glacier       0.87      0.82      0.84       553
-    mountain       0.85      0.85      0.85       525
-         sea       0.93      0.97      0.95       510
-      street       0.88      0.92      0.90       501
-
-    accuracy                           0.90      3000
-   macro avg       0.90      0.91      0.90      3000
-weighted avg       0.90      0.90      0.90      3000
-```
-
 ## Conclusion
 
 ## Next Steps
 
+
+
 ## Sources
 
-[pyimagesearch](https://www.pyimagesearch.com/2017/03/20/imagenet-vggnet-resnet-inception-xception-keras/) ImageNet: VGGNet, ResNet, Inception, and Xception with Keras
+- [pyimagesearch](https://www.pyimagesearch.com/2017/03/20/imagenet-vggnet-resnet-inception-xception-keras/) ImageNet: VGGNet, ResNet, Inception, and Xception with Keras
 
-You can use the [editor on GitHub](https://github.com/mdinh1/multi-classification/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
