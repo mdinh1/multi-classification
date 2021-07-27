@@ -46,6 +46,9 @@ The dataset used to fit the CNN model was obtained through [Kaggle](https://www.
   -- street/
 ```
 
+### Limitations
+
+
   
 ### Exploratory Data Analysis
 ![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
@@ -80,10 +83,6 @@ TESTING: Class names and image count
 ```
 
 ![image_dist](https://user-images.githubusercontent.com/46685852/126810969-c2d659b9-f50f-467f-88fc-462309af4a0f.png)
-
-### Limitations
-
-
 
 ## Preprocessing
 
