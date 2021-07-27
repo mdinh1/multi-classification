@@ -26,7 +26,7 @@ Questions that will be considered throughout this project:
 
 ## Data
 
-The dataset used to fit the CNN model was obtained through [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification) and shared by user Puneet Bansal. The data used to fit the CNN model consists a total of 17,034 images (150 x 150 dimension) where the images are already pre-segmented into training and testing data. Both training and testing datasets contains 
+The dataset used to fit the CNN model was obtained through [Kaggle](https://www.kaggle.com/puneet6060/intel-image-classification) which was originally used in a computer vision competition hosted on [Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-intel-scene-classification-challe). The data consists a total of 17,034 images (150 x 150 dimension) where the images are already pre-segmented into training and testing data where all images labeled by their structure type.
 
 ```
 -- seg_test/
@@ -46,11 +46,8 @@ The dataset used to fit the CNN model was obtained through [Kaggle](https://www.
   -- street/
 ```
 
-[Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/practice-problem-intel-scene-classification-challe)
-
-
   
-## Exploratory Data Analysis
+### Exploratory Data Analysis
 ![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
 
 
