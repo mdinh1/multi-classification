@@ -76,14 +76,18 @@ Examples:
 
 When observing the randomly displayed images below, there is a couple of assumptions that can be made:
 
-- Given that many images in "street" contains buildings, it is likely that a significant portion of the images in "street" will be classfied as "buildings".
-- Same can be said about images in "glacier" and "sea" where many images of "glacier" contains a body of water.
+- Given that many images in `street` containing building structures, it is likely that a significant portion of the images in `street` will be classfied as `buildings`.
+- Same can be said about images in `glacier` and `sea` where many images of `glacier` contains a body of water.
 
 ![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
 
 
 ## Implementing the Models
-During my research on how to structure a reliable multi-class classification model, 
+During my research on how to structure a CNN model, Keras pre-trained ImageNet models are a viable method of producing quick and reliable image classification models. These pre-trained models is trained using ImageNet database which contains more than 14 million images belonging to 20,000 classes. Keras provides a number of models, however, I will be focused on the more popular ones: `VGG19` and `ResNet50`.
+
+- `VGG19`: 
+
+- `ResNet50`: 
 
 ### Preprocessing
 
