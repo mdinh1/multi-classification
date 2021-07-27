@@ -1,13 +1,12 @@
-# Image Classification: Structure Type Identification using CNN
+# Image Classification: Scenic Type Identification using CNN
 
 ### _Authored by Michael Dinh_
   
 ## Introduction
   
-Image classification is the task of classifying an input image of its respective class from a set of 2 or more classes/labels. In this case, the problem presented in this project will be a multi-class classification one where there are 6 possible categories the input image can be classified as. 
+Image classification is the task of classifying an input image of its respective class from a set of 2 or more classes. In this case, the problem presented in this project will be a multi-class classification one where there are 6 possible categories the input image can be classified as. 
 
-The purpose of selecting image classification as the subject of this project is to present myself with some new and fun challenges in applying the general machine learning workflow. 
-This project is also intended to familiarize myself with the concept of convolutional neural networks and the practices involved when implementing the algorithm which ultimately allows for the ability to solve common computer vision problems like facial recognition and/or geolocation classifiction. 
+The purpose of selecting image classification as the subject of this project is to present myself with some new and fun challenges in applying the general machine learning workflow. This project is also intended to familiarize myself with the concept of convolutional neural networks and the practices involved when implementing the algorithm which ultimately allows for the ability to solve common computer vision problems like facial recognition or geolocation classifiction. 
 
 ### Problem Statement
 
@@ -48,12 +47,23 @@ The dataset used to fit the CNN model was obtained through [Kaggle](https://www.
 
 ### Limitations
 
-While randomly displaying the images that exists in the training portion of the dataset, I've taken noticed of some potential limitations of the data. The limitations that exists in this dataset includes mislabeled images along images that may "confuse" the model.
-- Examples: 
+While skimming through the images that exists in the training portion of the dataset, I've taken noticed of some potential limitations of the data. The limitations that exists in this dataset includes images that may "confuse" the model.
 
-![5233](https://user-images.githubusercontent.com/46685852/127090257-efe7e02d-25b7-4f1a-8bd4-b8674a0d3b6c.jpg) ![image](https://user-images.githubusercontent.com/46685852/127090792-0e32c5ef-5434-4d77-a1b2-9ef1f3c01fa9.png) ![image](https://user-images.githubusercontent.com/46685852/127090921-fac42bd7-c1d4-493b-a77e-12b1c381f2ef.png)
+Examples: 
+
+- This image, labeled "sea", contains multiple items such as a body of water and mountains. There is also the possibility that the mountains can be classed as "glacier".
+
+    ![5233](https://user-images.githubusercontent.com/46685852/127090257-efe7e02d-25b7-4f1a-8bd4-b8674a0d3b6c.jpg)![image](https://user-images.githubusercontent.com/46685852/127092472-0c9125ff-7d3a-4b00-b57d-a1caacc54c98.png)
+
+
+- The images below simply does not belong in the dataset.
+
+    ![image](https://user-images.githubusercontent.com/46685852/127090792-0e32c5ef-5434-4d77-a1b2-9ef1f3c01fa9.png) ![image](https://user-images.githubusercontent.com/46685852/127091877-7d9c6859-ef40-4487-a329-fd3a57a18990.png)
  
 ### Exploratory Data Analysis
+
+
+
 ![data_sample_cropped](https://user-images.githubusercontent.com/46685852/126811166-e1fcd172-140d-452e-a757-7f1c17029b2f.png)
 
 
